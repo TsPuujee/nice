@@ -1,7 +1,7 @@
 var calculate = require("khoroo");
 
 export async function geoLoc(lat, lng) {
-  let promise = new Promise((resolve, reject) => {
+  let promise = new Promise((resolve) => {
     calculate(lat, lng).then(data => {
       resolve(data);
     });
